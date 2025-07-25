@@ -451,4 +451,33 @@
     background-color: #E95A08;
     border: none;
 }
+/* footer */
+.footer{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: start;
+    justify-items: start;
+    width: 100%;
+    padding-left: 10px;
 }
+.footer-bar ul li{
+    padding-bottom: 10px;
+}
+.footer-bar{
+    display: grid;
+    gap: 5px;
+    grid-template-columns: repeat(1, 1fr);
+}
+.logo{
+    width: 100%;
+    margin-bottom: 20px;
+    margin-right: 0;
+}
+.contact-logo img{
+    margin-top: 5px;
+    padding-right: 10px;
+}
+}
+
+
+/* end */
