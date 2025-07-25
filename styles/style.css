@@ -104,6 +104,84 @@
     padding-bottom: 10px;
 }
 
+/* flover-lover style */
+.flower-lover{
+    display: flex;
+    gap: 60px;
+    margin-top: 210px;
+}
+.flower-lover-left{
+    position: relative;
+}
+.badge{
+    position: absolute;
+    top: -20%;
+    right: -15%;
+}
+.badge img{
+    height: 286px;
+    width: 286px;
+}
+.flower-lover-right{
+    padding: 38px 0;
+}
+.flower-lover-right h1{
+    font-size: 50px;
+    font-weight: 700;
+    color: #000000;
+    padding-bottom: 20px;
+}
+.flower-lover-right li{
+    font-size: 22px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.5);
+    padding-bottom: 20px;
+    
+}
+
+/* lates-deal */
+.lates-deal{
+    text-align: center;
+    margin-bottom: 120px;
+}
+.lates-deal h1{
+    font-size: 50px;
+    font-weight: 700;
+    color: #000000;
+    margin-top: 133px;
+    margin-bottom: 16px;
+}
+.lates-deal p{
+    font-size: 22px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.5);
+    width: 888px;
+    height: 54px;
+    margin: auto;
+}
+
+/* shop-now style */
+.shop-now{
+    display: flex;
+}
+.Bloom-Plant{
+    background-image: url(../images/deal-bloom.png);
+    width: 367px;
+    height: 201px;
+}
+.Ana-Plant{
+    background-image: url(../images/deal-ana.png);
+    width: 367px;
+    height: 201px;
+}
+
+.shop-now-right{
+    background-image: url(../images/deal-zabo.png);
+    height: 423px;
+    width: 753px;
+}
+
+
 /* Responsive media query start */
 /* mobile */
 @media (max-width: 576px) {
@@ -165,5 +243,34 @@
         font-size: 16px;
         font-weight: 500;
         padding: 5px 80px;
+    }
+    /* flower lover  */
+    .flower-lover{
+        flex-direction: column;
+        padding: 0 20px;
+    }
+    .right-img{
+        width: 100%;
+    }
+    .badge{
+        display: none;
+    }
+    .lates-deal{
+    text-align: center;
+}
+    .lates-deal h1{
+    font-size: 24px;
+    font-weight: 700;
+    color: #000000;
+    margin-top: 133px;
+    margin-bottom: 16px;
+    }
+    .lates-deal p{
+    font-size: 14px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.5);
+    width: 336px;
+    height: 64px;
+    margin: auto;
     }
 }
