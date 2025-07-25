@@ -164,6 +164,7 @@
 .shop-now{
     display: flex;
     gap: 28px;
+    margin-bottom: 120px;
 }
 .Bloom-Plant{
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url(../images/deal-bloom.png);
@@ -226,6 +227,40 @@
 }
 .shop-now-right a{
     color: white;
+}
+
+/* join-section style */
+
+.join-section{
+    background-image: url(../images/news-letter-bg.png);
+    margin: auto;
+    width: 1440px;
+    height: 533px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+.join-bunch h1{
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 23px;
+}
+.form{
+    display: flex;
+}
+.form input[type="email"]{
+    width: 644px;
+    height: 50px;
+    border: none;
+}
+.form input::placeholder{
+    color: rgba(0, 0, 0, 0.5);
+    padding-left: 20px;
+    font-size: 20px;
 }
 
 
@@ -336,4 +371,46 @@
     .shop-now-right{
         width: 100%;
     }
+
+
+
+    .join-section{
+    background-image: url(../images/news-letter-bg.png);
+    margin: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+.join-bunch h1{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 23px;
+}
+.form{
+    display: flex;
+}
+.form input[type="email"]{
+    width:218px;
+    height: 50px;
+    padding: 0;
+    border: none;
+}
+.form input::placeholder{
+    color: rgba(0, 0, 0, 0.5);
+    padding-left: 20px;
+    font-size: 20px;
+}
+.btn-primary{
+    font-size: 16px;
+    font-weight: 600;
+    padding: 5px;
+    color: white;
+    background-color: #E95A08;
+    border: none;
+}
 }
