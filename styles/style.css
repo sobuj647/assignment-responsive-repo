@@ -163,22 +163,69 @@
 /* shop-now style */
 .shop-now{
     display: flex;
+    gap: 28px;
 }
 .Bloom-Plant{
-    background-image: url(../images/deal-bloom.png);
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url(../images/deal-bloom.png);
+    border-radius: 10px;
     width: 367px;
     height: 201px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    margin-bottom: 25px;
 }
 .Ana-Plant{
-    background-image: url(../images/deal-ana.png);
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url(../images/deal-ana.png);
+    border-radius: 10px;
     width: 367px;
     height: 201px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
 }
-
+.Bloom-Plant h1, .Ana-Plant h1{
+    font-size: 20px;
+    font-weight: 700;
+}
+.Bloom-Plant a, .Ana-Plant a{
+    color: white;
+    font-weight: 500;
+     
+}
 .shop-now-right{
-    background-image: url(../images/deal-zabo.png);
+    background-image: 
+        linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)),
+        url(../images/deal-zabo.png);
+    border-radius: 10px;
     height: 423px;
     width: 753px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+}
+.shop-now-right h1{
+    font-size: 40px;
+    font-weight: 700;
+}
+.shop-now-right a{
+    font-size: 28px;
+    font-weight: 600;
+}
+.shop-now-right a{
+    color: white;
 }
 
 
@@ -222,6 +269,7 @@
     .plant-tittel p{
         font-size: 14px;
         font-weight: 400;
+        padding: 0;
     }
     .plant-card{
         display: grid;
@@ -242,7 +290,8 @@
     .btn-primary{
         font-size: 16px;
         font-weight: 500;
-        padding: 5px 80px;
+        width: 100%;
+        padding: 5px 0;
     }
     /* flower lover  */
     .flower-lover{
@@ -272,5 +321,19 @@
     width: 336px;
     height: 64px;
     margin: auto;
+    }
+    /* shop-now */
+    .shop-now{
+        flex-direction: column;
+    }
+    .shop-now-left{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .shop-now-right{
+        width: 100%;
     }
 }
