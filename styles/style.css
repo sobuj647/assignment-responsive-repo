@@ -8,13 +8,13 @@
 .container{
     max-width: 1140px;
     margin: auto;
-    background-color: lawngreen;
+    /* background-color: lawngreen; */
 }
 .btn-primary{
     font-size: 16px;
     font-weight: 600;
     color: white;
-    padding: 10px 80px;
+    padding: 10px 78px;
     background-color: #E95A08;
 }
 /* navbar style */
@@ -23,6 +23,7 @@
     justify-content: space-between;
     align-items: center;
     margin-top: 30px;
+    margin-bottom: 120px;
 }
 .navbar ul{
     display: flex;
@@ -60,7 +61,48 @@
     font-weight: 400;
     color: rgba(0, 0, 0, 0.5);
 }
-
+.banner-right img{
+    display: block;
+}
+/* plants section style */
+.plant-tittel{
+    text-align: center;
+    margin-top: 120px;
+    margin-bottom: 49px;
+}
+.plant-tittel h1{
+    font-size: 50px;
+    font-weight: bold;
+    color: #000000;
+    padding-bottom: 16px;
+}
+.plant-tittel p{
+    font-size: 22px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.5);
+    padding: 0 126px;
+}
+.plant-card{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+.card{
+    text-align: center;
+}
+.card h2{
+    font-size: 22px;
+    font-weight: 500;
+    color: #111111;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+.card p{
+    font-size: 22px;
+    font-weight: 700;
+    color: #111111;
+    padding-bottom: 10px;
+}
 
 /* Responsive media query start */
 /* mobile */
@@ -92,5 +134,36 @@
     }
     .banner-right img{
         width: 100%;
+    }
+    /* plants */
+
+    .plant-tittel h1{
+        font-size: 24px;
+        font-weight: bold;
+    }
+    .plant-tittel p{
+        font-size: 14px;
+        font-weight: 400;
+    }
+    .plant-card{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    .card h2{
+        font-size: 16px;
+        font-weight: 500;
+    }
+    .card p{
+        font-size: 16px;
+        font-weight: 700;
+    }
+    .card img{
+        width: 100%;
+    }
+    .btn-primary{
+        font-size: 16px;
+        font-weight: 500;
+        padding: 5px 80px;
     }
 }
